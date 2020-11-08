@@ -256,7 +256,7 @@ class BotToast {
           if (align != null) {
             child = Align(alignment: align, child: child);
           }
-          return SafeArea(child: child);
+          return child;
         },
         toastBuilder: (cancelFunc) => NotificationToast(
             child: toastBuilder(cancelFunc),
@@ -386,7 +386,7 @@ class BotToast {
           if (align != null) {
             child = Align(alignment: align, child: child);
           }
-          return SafeArea(child: child);
+          return child;
         },
         toastBuilder: toastBuilder);
   }
@@ -491,7 +491,7 @@ class BotToast {
           if (align != null) {
             child = Align(alignment: align, child: child);
           }
-          return SafeArea(child: child);
+          return child;
         },
         onClose: onClose,
         clickClose: clickClose,
